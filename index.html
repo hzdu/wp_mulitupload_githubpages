@@ -13,7 +13,7 @@
             color: #24292f;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: #fff;
             border-radius: 12px;
@@ -81,6 +81,23 @@
             color: #8b949e;
             font-size: 12px;
             font-family: monospace;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .download-link {
+            display: inline-block;
+            background: #2da44e;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .download-link:hover {
+            background: #2c974b;
         }
         .empty {
             text-align: center;
@@ -103,6 +120,7 @@
             .container { padding: 20px; }
             table { font-size: 13px; }
             .filename { display: none; }
+            .download-link { padding: 2px 8px; font-size: 12px; }
         }
     </style>
 </head>
@@ -145,6 +163,7 @@
                                 <th>插件名</th>
                                 <th>版本号</th>
                                 <th class="filename">文件名</th>
+                                <th>下载</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -154,7 +173,8 @@
                         <tr>
                             <td class="plugin-name">${escapeHtml(item.plugin)}</td>
                             <td><span class="version">${escapeHtml(item.version)}</span></td>
-                            <td class="filename">${escapeHtml(item.filename)}</td>
+                            <td class="filename" title="${escapeHtml(item.filename)}">${escapeHtml(item.filename)}</td>
+                            <td><a href="${escapeHtml(item.download_url)}" class="download-link" target="_blank">⬇ 下载</a></td>
                         </tr>
                     `;
                 });
