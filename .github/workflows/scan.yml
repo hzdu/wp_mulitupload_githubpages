@@ -1,10 +1,9 @@
 name: 定时扫描 ZIP 文件
 
 on:
-  # 每3小时执行一次（UTC 时间的 0,3,6,9,12,15,18,21 点）
+  # 每3小时执行一次
   schedule:
     - cron: '0 */3 * * *'
-  # 支持手动触发
   workflow_dispatch:
 
 permissions:
@@ -15,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 升级到 v7，原生支持 Node.js 24[reference:5]
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
+      # 升级到 v7，原生支持 Node.js 24[reference:6]
       - name: 设置 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 
@@ -27,8 +28,6 @@ jobs:
         run: python scan.py
         env:
           SCAN_DIR: ./plugins
-          # 可选：自定义 BASE_URL
-          # BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: 提交并推送变更
         run: |
