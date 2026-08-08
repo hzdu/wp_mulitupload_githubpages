@@ -1,0 +1,20 @@
+[
+  {
+    "plugin": "object cache pro",
+    "version": "v1.25.6",
+    "filename": "object-cache-pro_v1.25.6.zip",
+    "path": "plugins\\object-cache-pro_v1.25.6.zip"
+  },
+  {
+    "plugin": "perfmatters",
+    "version": "v2.6.7",
+    "filename": "perfmatters_v2.6.7.zip",
+    "path": "plugins\\perfmatters_v2.6.7.zip"
+  },
+  {
+    "plugin": "wp rocket",
+    "version": "v3.23.1.1",
+    "filename": "wp-rocket_v3.23.1.1.zip",
+    "path": "plugins\\wp-rocket_v3.23.1.1.zip"
+  }
+]

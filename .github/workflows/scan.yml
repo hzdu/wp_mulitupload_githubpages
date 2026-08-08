@@ -1,0 +1,44 @@
+name: 定时扫描 ZIP 文件
+
+on:
+  # 定时触发：每天 UTC 00:00（北京时间 08:00）
+  schedule:
+    - cron: '0 0 * * *'
+  # 支持手动触发
+  workflow_dispatch:
+
+# 写入权限，用于提交 JSON
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 运行扫描脚本
+        run: python scan.py
+        env:
+          # 修改为你的子目录路径（相对于仓库根目录）
+          SCAN_DIR: ./plugins
+
+      - name: 提交并推送变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add plugins.json
+          if git diff --staged --quiet; then
+            echo "📭 无变更需要提交"
+          else
+            git commit -m "🤖 chore: 更新 plugins.json [skip ci]"
+            git push
+            echo "✅ 已提交并推送"
+          fi
