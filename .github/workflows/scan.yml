@@ -1,8 +1,10 @@
 name: 定时扫描 ZIP 文件
 
 on:
+  # 每3小时执行一次（UTC 时间的 0,3,6,9,12,15,18,21 点）
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */3 * * *'
+  # 支持手动触发
   workflow_dispatch:
 
 permissions:
@@ -11,6 +13,7 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
+
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -24,17 +27,18 @@ jobs:
         run: python scan.py
         env:
           SCAN_DIR: ./plugins
-          # 可选：自定义 BASE_URL（如使用 Pages 域名）
+          # 可选：自定义 BASE_URL
           # BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
-      - name: 提交并推送
+      - name: 提交并推送变更
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add plugins.json
           if git diff --staged --quiet; then
-            echo "📭 无变更"
+            echo "📭 无变更需要提交"
           else
             git commit -m "🤖 chore: 更新 plugins.json [skip ci]"
             git push
+            echo "✅ 已提交并推送"
           fi
