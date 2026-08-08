@@ -7,33 +7,40 @@ import re
 from pathlib import Path
 
 def parse_filename(filename: str):
-    name = filename.rsplit('.zip', 1)[0]
+    """解析文件名，返回 (插件名, 版本号)"""
+    name = filename.rsplit('.zip', 1)[0]          # 去除 .zip 后缀
+    # 匹配最后一个分隔符（- 或 _）后的版本号，版本号可含 v 前缀，数字段数 >= 2
     match = re.search(r'[-_](v?\d+(?:\.\d+)+)$', name)
     if not match:
         return None, None
     version = match.group(1)
-    plugin_raw = name[:match.start()]
+    # 如果版本号以 'v' 开头，去掉它
+    if version.startswith('v'):
+        version = version[1:]
+    plugin_raw = name[:match.start()]            # 分隔符之前的部分作为插件名
     if not plugin_raw:
         return None, None
+    # 将插件名中的 '-' 替换为空格，并清理多余空格
     plugin_display = plugin_raw.replace('-', ' ')
     plugin_display = ' '.join(plugin_display.split())
     return plugin_display, version
 
 def get_download_url(file_path: Path, repo_root: Path) -> str:
-    # 将两者都转为绝对路径，确保 relative_to 正确工作
+    """生成该文件的可下载 URL（优先从环境变量读取，否则使用 GitHub Raw）"""
     abs_file = file_path.resolve()
     abs_repo = repo_root.resolve()
-    rel_path = abs_file.relative_to(abs_repo)  # 返回相对于仓库根目录的路径
-
+    try:
+        rel_path = abs_file.relative_to(abs_repo)
+    except ValueError:
+        # 如果相对路径计算失败，直接使用文件名（兜底）
+        rel_path = Path(file_path.name)
     base_url = os.environ.get('BASE_URL')
     if base_url:
         return f"{base_url.rstrip('/')}/{rel_path.as_posix()}"
-    
     repository = os.environ.get('GITHUB_REPOSITORY')
     ref = os.environ.get('GITHUB_REF_NAME', 'main')
     if repository:
         return f"https://raw.githubusercontent.com/{repository}/{ref}/{rel_path.as_posix()}"
-    
     # 本地开发时返回相对路径
     return f"/{rel_path.as_posix()}"
 
@@ -49,7 +56,7 @@ def scan_directory(directory: str, repo_root: Path):
         if plugin and version:
             download_url = get_download_url(file, repo_root)
             results.append({
-                'plugin': plugin,
+                'plugin_name': plugin,
                 'version': version,
                 'filename': file.name,
                 'path': str(file),
@@ -58,7 +65,7 @@ def scan_directory(directory: str, repo_root: Path):
         else:
             print(f"⏭️ 跳过无效文件名: {file.name}")
 
-    results.sort(key=lambda x: x['plugin'])
+    results.sort(key=lambda x: x['plugin_name'])
     return results
 
 def main():
