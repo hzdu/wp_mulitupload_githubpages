@@ -16,19 +16,25 @@ def parse_filename(filename: str):
     if not plugin_raw:
         return None, None
     plugin_display = plugin_raw.replace('-', ' ')
-    plugin_display = ' '.join(plugin_display.split())  # 清理多余空格
+    plugin_display = ' '.join(plugin_display.split())
     return plugin_display, version
 
 def get_download_url(file_path: Path, repo_root: Path) -> str:
-    rel_path = file_path.relative_to(repo_root)
+    # 将两者都转为绝对路径，确保 relative_to 正确工作
+    abs_file = file_path.resolve()
+    abs_repo = repo_root.resolve()
+    rel_path = abs_file.relative_to(abs_repo)  # 返回相对于仓库根目录的路径
+
     base_url = os.environ.get('BASE_URL')
     if base_url:
         return f"{base_url.rstrip('/')}/{rel_path.as_posix()}"
+    
     repository = os.environ.get('GITHUB_REPOSITORY')
     ref = os.environ.get('GITHUB_REF_NAME', 'main')
     if repository:
         return f"https://raw.githubusercontent.com/{repository}/{ref}/{rel_path.as_posix()}"
-    # 本地开发占位
+    
+    # 本地开发时返回相对路径
     return f"/{rel_path.as_posix()}"
 
 def scan_directory(directory: str, repo_root: Path):
