@@ -1,5 +1,47 @@
 [
   {
+    "plugin_name": "checkout for woocommerce",
+    "version": "11.3.0",
+    "filename": "checkout-for-woocommerce_v11.3.0.zip",
+    "path": "plugins/checkout-for-woocommerce_v11.3.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/checkout-for-woocommerce_v11.3.0.zip"
+  },
+  {
+    "plugin_name": "code snippets pro",
+    "version": "3.9.6",
+    "filename": "code-snippets-pro_v3.9.6.zip",
+    "path": "plugins/code-snippets-pro_v3.9.6.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/code-snippets-pro_v3.9.6.zip"
+  },
+  {
+    "plugin_name": "elementor",
+    "version": "4.2.1",
+    "filename": "elementor_v4.2.1.zip",
+    "path": "plugins/elementor_v4.2.1.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/elementor_v4.2.1.zip"
+  },
+  {
+    "plugin_name": "elementor pro",
+    "version": "4.2.1",
+    "filename": "elementor-pro_v4.2.1.zip",
+    "path": "plugins/elementor-pro_v4.2.1.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/elementor-pro_v4.2.1.zip"
+  },
+  {
+    "plugin_name": "flexible checkout fields",
+    "version": "4.1.21",
+    "filename": "flexible-checkout-fields_4.1.21.zip",
+    "path": "plugins/flexible-checkout-fields_4.1.21.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/flexible-checkout-fields_4.1.21.zip"
+  },
+  {
+    "plugin_name": "flexible checkout fields pro",
+    "version": "4.0.29",
+    "filename": "flexible-checkout-fields-pro_v4.0.29.zip",
+    "path": "plugins/flexible-checkout-fields-pro_v4.0.29.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/flexible-checkout-fields-pro_v4.0.29.zip"
+  },
+  {
     "plugin_name": "object cache pro",
     "version": "1.25.6",
     "filename": "object-cache-pro_v1.25.6.zip",
@@ -14,10 +56,66 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/perfmatters_v2.6.7.zip"
   },
   {
+    "plugin_name": "pixelyoursite pro",
+    "version": "12.6.2",
+    "filename": "pixelyoursite-pro_v12.6.2.zip",
+    "path": "plugins/pixelyoursite-pro_v12.6.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-pro_v12.6.2.zip"
+  },
+  {
+    "plugin_name": "pixelyoursite super pack",
+    "version": "6.2.2",
+    "filename": "pixelyoursite-super-pack_v6.2.2.zip",
+    "path": "plugins/pixelyoursite-super-pack_v6.2.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-super-pack_v6.2.2.zip"
+  },
+  {
+    "plugin_name": "wordpress seo",
+    "version": "28.2",
+    "filename": "wordpress-seo_v28.2.zip",
+    "path": "plugins/wordpress-seo_v28.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordpress-seo_v28.2.zip"
+  },
+  {
+    "plugin_name": "wordpress seo premium",
+    "version": "28.2",
+    "filename": "wordpress-seo-premium_v28.2.zip",
+    "path": "plugins/wordpress-seo-premium_v28.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordpress-seo-premium_v28.2.zip"
+  },
+  {
     "plugin_name": "wp rocket",
     "version": "3.23.1.1",
     "filename": "wp-rocket_v3.23.1.1.zip",
     "path": "plugins/wp-rocket_v3.23.1.1.zip",
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wp-rocket_v3.23.1.1.zip"
+  },
+  {
+    "plugin_name": "wpseo local",
+    "version": "15.8",
+    "filename": "wpseo-local_v15.8.zip",
+    "path": "plugins/wpseo-local_v15.8.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wpseo-local_v15.8.zip"
+  },
+  {
+    "plugin_name": "wpseo news",
+    "version": "13.3",
+    "filename": "wpseo-news_v13.3.zip",
+    "path": "plugins/wpseo-news_v13.3.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wpseo-news_v13.3.zip"
+  },
+  {
+    "plugin_name": "wpseo video",
+    "version": "15.2",
+    "filename": "wpseo-video_v15.2.zip",
+    "path": "plugins/wpseo-video_v15.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wpseo-video_v15.2.zip"
+  },
+  {
+    "plugin_name": "wpseo woocommerce",
+    "version": "16.8",
+    "filename": "wpseo-woocommerce_v16.8.zip",
+    "path": "plugins/wpseo-woocommerce_v16.8.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wpseo-woocommerce_v16.8.zip"
   }
 ]
