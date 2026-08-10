@@ -49,6 +49,13 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/flexible-checkout-fields-pro_v4.0.29.zip"
   },
   {
+    "plugin_name": "iconic woothumbs",
+    "version": "5.13.2",
+    "filename": "iconic-woothumbs_v5.13.2.zip",
+    "path": "plugins/iconic-woothumbs_v5.13.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/iconic-woothumbs_v5.13.2.zip"
+  },
+  {
     "plugin_name": "object cache pro",
     "version": "1.25.6",
     "filename": "object-cache-pro_v1.25.6.zip",
@@ -75,6 +82,34 @@
     "filename": "pixelyoursite-super-pack_v6.2.2.zip",
     "path": "plugins/pixelyoursite-super-pack_v6.2.2.zip",
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-super-pack_v6.2.2.zip"
+  },
+  {
+    "plugin_name": "woo variation swatches",
+    "version": "2.3.0",
+    "filename": "woo-variation-swatches_2.3.0.zip",
+    "path": "plugins/woo-variation-swatches_2.3.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/woo-variation-swatches_2.3.0.zip"
+  },
+  {
+    "plugin_name": "woo variation swatches pro",
+    "version": "2.3.0",
+    "filename": "woo-variation-swatches-pro_v2.3.0.zip",
+    "path": "plugins/woo-variation-swatches-pro_v2.3.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/woo-variation-swatches-pro_v2.3.0.zip"
+  },
+  {
+    "plugin_name": "woocommerce request a quote",
+    "version": "2.9.2",
+    "filename": "woocommerce-request-a-quote_v2.9.2.zip",
+    "path": "plugins/woocommerce-request-a-quote_v2.9.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/woocommerce-request-a-quote_v2.9.2.zip"
+  },
+  {
+    "plugin_name": "woocommerce smart coupons",
+    "version": "9.81.0",
+    "filename": "woocommerce-smart-coupons_v9.81.0.zip",
+    "path": "plugins/woocommerce-smart-coupons_v9.81.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/woocommerce-smart-coupons_v9.81.0.zip"
   },
   {
     "plugin_name": "wordpress seo",
@@ -124,5 +159,12 @@
     "filename": "wpseo-woocommerce_v16.8.zip",
     "path": "plugins/wpseo-woocommerce_v16.8.zip",
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wpseo-woocommerce_v16.8.zip"
+  },
+  {
+    "plugin_name": "yaymail pro",
+    "version": "4.4.2",
+    "filename": "yaymail-pro_v4.4.2.zip",
+    "path": "plugins/yaymail-pro_v4.4.2.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/yaymail-pro_v4.4.2.zip"
   }
 ]
