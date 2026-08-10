@@ -1,5 +1,12 @@
 [
   {
+    "plugin_name": "booster plus for woocommerce",
+    "version": "8.2.0",
+    "filename": "booster-plus-for-woocommerce_v8.2.0.zip",
+    "path": "plugins/booster-plus-for-woocommerce_v8.2.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/booster-plus-for-woocommerce_v8.2.0.zip"
+  },
+  {
     "plugin_name": "checkout for woocommerce",
     "version": "11.3.0",
     "filename": "checkout-for-woocommerce_v11.3.0.zip",
