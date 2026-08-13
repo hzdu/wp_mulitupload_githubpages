@@ -21,6 +21,13 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/code-snippets-pro_v3.9.6.zip"
   },
   {
+    "plugin_name": "disable admin notices",
+    "version": "1.4.7",
+    "filename": "disable-admin-notices-1.4.7.zip",
+    "path": "plugins/disable-admin-notices-1.4.7.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/disable-admin-notices-1.4.7.zip"
+  },
+  {
     "plugin_name": "elementor",
     "version": "4.2.1",
     "filename": "elementor_v4.2.1.zip",
