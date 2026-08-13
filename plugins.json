@@ -119,6 +119,13 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/woocommerce-smart-coupons_v9.81.0.zip"
   },
   {
+    "plugin_name": "wordfence",
+    "version": "9.0.0",
+    "filename": "wordfence-v9.0.0.zip",
+    "path": "plugins/wordfence-v9.0.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordfence-v9.0.0.zip"
+  },
+  {
     "plugin_name": "wordpress seo",
     "version": "28.2",
     "filename": "wordpress-seo_v28.2.zip",
