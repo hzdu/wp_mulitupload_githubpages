@@ -1,7 +1,10 @@
-name: 定时扫描 ZIP 文件
+name: 扫描 ZIP 文件生成 plugins.json
 
 on:
-  # 每3小时执行一次（UTC 时间 0,3,6,9,12,15,18,21 点）
+  # 每次推送到 main 都重新生成
+  push:
+    branches: main
+  # 保留定时执行作为兜底（UTC 时间 0,3,6,9,12,15,18,21 点）
   schedule:
     - cron: '0 */3 * * *'
   # 支持手动触发
@@ -9,6 +12,11 @@ on:
 
 permissions:
   contents: write
+
+# 同一时间只跑一个，避免两次推送并发写回 main 造成 non-fast-forward
+concurrency:
+  group: scan-plugins-json
+  cancel-in-progress: false
 
 jobs:
   scan:
