@@ -1,5 +1,12 @@
 [
   {
+    "plugin_name": "ai engine pro",
+    "version": "3.8.3",
+    "filename": "ai-engine-pro_v3.8.3.zip",
+    "path": "plugins/ai-engine-pro_v3.8.3.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/ai-engine-pro_v3.8.3.zip"
+  },
+  {
     "plugin_name": "booster plus for woocommerce",
     "version": "8.2.0",
     "filename": "booster-plus-for-woocommerce_v8.2.0.zip",
@@ -8,10 +15,10 @@
   },
   {
     "plugin_name": "checkout for woocommerce",
-    "version": "11.3.0",
-    "filename": "checkout-for-woocommerce_v11.3.0.zip",
-    "path": "plugins/checkout-for-woocommerce_v11.3.0.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/checkout-for-woocommerce_v11.3.0.zip"
+    "version": "11.4.0",
+    "filename": "checkout-for-woocommerce_v11.4.0.zip",
+    "path": "plugins/checkout-for-woocommerce_v11.4.0.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/checkout-for-woocommerce_v11.4.0.zip"
   },
   {
     "plugin_name": "code snippets pro",
@@ -21,6 +28,13 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/code-snippets-pro_v3.9.6.zip"
   },
   {
+    "plugin_name": "conversion exporter",
+    "version": "1.0.7.5",
+    "filename": "conversion-exporter_v1.0.7.5.zip",
+    "path": "plugins/conversion-exporter_v1.0.7.5.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/conversion-exporter_v1.0.7.5.zip"
+  },
+  {
     "plugin_name": "disable admin notices",
     "version": "1.4.7",
     "filename": "disable-admin-notices-1.4.7.zip",
@@ -28,18 +42,11 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/disable-admin-notices-1.4.7.zip"
   },
   {
-    "plugin_name": "elementor",
-    "version": "4.2.1",
-    "filename": "elementor_v4.2.1.zip",
-    "path": "plugins/elementor_v4.2.1.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/elementor_v4.2.1.zip"
-  },
-  {
     "plugin_name": "elementor pro",
-    "version": "4.2.1",
-    "filename": "elementor-pro_v4.2.1.zip",
-    "path": "plugins/elementor-pro_v4.2.1.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/elementor-pro_v4.2.1.zip"
+    "version": "4.3.1",
+    "filename": "elementor-pro_v4.3.1.zip",
+    "path": "plugins/elementor-pro_v4.3.1.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/elementor-pro_v4.3.1.zip"
   },
   {
     "plugin_name": "flexible checkout fields",
@@ -71,24 +78,24 @@
   },
   {
     "plugin_name": "perfmatters",
-    "version": "2.6.7",
-    "filename": "perfmatters_v2.6.7.zip",
-    "path": "plugins/perfmatters_v2.6.7.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/perfmatters_v2.6.7.zip"
+    "version": "2.6.8",
+    "filename": "perfmatters_v2.6.8.zip",
+    "path": "plugins/perfmatters_v2.6.8.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/perfmatters_v2.6.8.zip"
   },
   {
     "plugin_name": "pixelyoursite pro",
-    "version": "12.6.2",
-    "filename": "pixelyoursite-pro_v12.6.2.zip",
-    "path": "plugins/pixelyoursite-pro_v12.6.2.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-pro_v12.6.2.zip"
+    "version": "12.6.7.1",
+    "filename": "pixelyoursite-pro_v12.6.7.1.zip",
+    "path": "plugins/pixelyoursite-pro_v12.6.7.1.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-pro_v12.6.7.1.zip"
   },
   {
     "plugin_name": "pixelyoursite super pack",
-    "version": "6.2.2",
-    "filename": "pixelyoursite-super-pack_v6.2.2.zip",
-    "path": "plugins/pixelyoursite-super-pack_v6.2.2.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-super-pack_v6.2.2.zip"
+    "version": "6.2.4",
+    "filename": "pixelyoursite-super-pack_v6.2.4.zip",
+    "path": "plugins/pixelyoursite-super-pack_v6.2.4.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/pixelyoursite-super-pack_v6.2.4.zip"
   },
   {
     "plugin_name": "woo variation swatches",
@@ -126,18 +133,11 @@
     "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordfence-v9.0.0.zip"
   },
   {
-    "plugin_name": "wordpress seo",
-    "version": "28.2",
-    "filename": "wordpress-seo_v28.2.zip",
-    "path": "plugins/wordpress-seo_v28.2.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordpress-seo_v28.2.zip"
-  },
-  {
     "plugin_name": "wordpress seo premium",
-    "version": "28.2",
-    "filename": "wordpress-seo-premium_v28.2.zip",
-    "path": "plugins/wordpress-seo-premium_v28.2.zip",
-    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordpress-seo-premium_v28.2.zip"
+    "version": "28.6",
+    "filename": "wordpress-seo-premium_v28.6.zip",
+    "path": "plugins/wordpress-seo-premium_v28.6.zip",
+    "download_url": "https://raw.githubusercontent.com/hzdu/wp_mulitupload_githubpages/main/plugins/wordpress-seo-premium_v28.6.zip"
   },
   {
     "plugin_name": "wp rocket",
