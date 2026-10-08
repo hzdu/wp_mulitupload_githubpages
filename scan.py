@@ -48,7 +48,7 @@ def scan_directory(directory: str, repo_root: Path):
     results = []
     root = Path(directory)
     if not root.exists():
-        print(f"⚠️ 目录不存在: {directory}")
+        print(f"⚠️ Not exists: {directory}")
         return results
 
     for file in root.glob('**/*.zip'):
@@ -63,7 +63,7 @@ def scan_directory(directory: str, repo_root: Path):
                 'download_url': download_url
             })
         else:
-            print(f"⏭️ 跳过无效文件名: {file.name}")
+            print(f"⏭️ Skip filename: {file.name}")
 
     results.sort(key=lambda x: x['plugin_name'])
     return results
@@ -71,12 +71,12 @@ def scan_directory(directory: str, repo_root: Path):
 def main():
     scan_dir = os.environ.get('SCAN_DIR', './plugins')
     repo_root = Path.cwd()
-    print(f"📂 扫描目录: {scan_dir}")
+    print(f"📂 Scan dir: {scan_dir}")
     data = scan_directory(scan_dir, repo_root)
-    print(f"✅ 找到 {len(data)} 个有效插件")
+    print(f"✅ Find {len(data)} plugins.")
     with open('plugins.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-    print("📄 已生成: plugins.json")
+    print("📄 Create success: plugins.json")
 
 if __name__ == '__main__':
     main()
